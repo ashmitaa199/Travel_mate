@@ -25,7 +25,7 @@ const AuthModal = ({ setShowModal, isSignUp }) => {
         }
 
         try {
-            const response = await axios.post(`http://localhost:8000/${isSignUp ? 'signup' : 'login'}`, { email, password });
+            const response = await axios.post(`https://travel-mate-backend-9h6l.onrender.com/${isSignUp ? 'signup' : 'login'}`, { email, password });
 
             setCookie('AuthToken', response.data.token);
             setCookie('UserId', response.data.userId);

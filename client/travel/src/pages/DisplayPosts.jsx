@@ -9,7 +9,7 @@ const DisplayPosts = () => {
   useEffect(() => {
     const fetchPosts = async () => {
       try {
-        const response = await axios.get('http://localhost:8000/posts');
+        const response = await axios.get('https://travel-mate-backend-9h6l.onrender.com/posts');
         setPosts(response.data);
       } catch (error) {
         console.error('Error fetching posts:', error);

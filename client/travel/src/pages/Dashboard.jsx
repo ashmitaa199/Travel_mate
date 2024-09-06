@@ -14,7 +14,7 @@ const Dashboard = () => {
   // Fetch user data
   const getUser = async () => {
     try {
-      const response = await axios.get('http://localhost:8000/user', {
+      const response = await axios.get('https://travel-mate-backend-9h6l.onrender.com/user', {
         params: { userId }
       });
       setUser(response.data);
@@ -25,7 +25,7 @@ const Dashboard = () => {
 
   const getGenderedUsers = async () => {
     try {
-      const response = await axios.get('http://localhost:8000/gendered-users', {
+      const response = await axios.get('https://travel-mate-backend-9h6l.onrender.com/gendered-users', {
         params: { gender: user?.gender_interest === 'everyone' ? null : user?.gender_interest }
       });
       setGenderedUsers(response.data);

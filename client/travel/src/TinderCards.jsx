@@ -10,7 +10,7 @@ function TinderCards({ genderedUsers, user }) {
 
   const updateMatches = async (matchedUserId) => {
     try {
-      await axios.put('http://localhost:8000/addmatch', {
+      await axios.put('https://travel-mate-backend-9h6l.onrender.com/addmatch', {
         userId,
         matchedUserId
       });

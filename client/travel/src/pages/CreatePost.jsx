@@ -31,7 +31,7 @@ const CreatePost = () => {
     formData.append('description', description);
 
     try {
-      await axios.post('http://localhost:8000/posts', formData, {
+      await axios.post('https://travel-mate-backend-9h6l.onrender.com/posts', formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },

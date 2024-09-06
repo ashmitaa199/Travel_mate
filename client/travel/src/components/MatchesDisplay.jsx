@@ -13,7 +13,7 @@ const MatchesDisplay = ({matches, setClickedUser}) => {
 
     try{
 
-      const response = await axios.get('http://localhost:8000/users', {
+      const response = await axios.get('https://travel-mate-backend-9h6l.onrender.com/users', {
         params: {userIds: JSON.stringify(matchedUserIds)}
 
       })

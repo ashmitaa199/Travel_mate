@@ -22,7 +22,7 @@ function App() {
   useEffect(() => {
     const fetchUser = async () => {
       try {
-        const response = await axios.get('http://localhost:8000/user', {
+        const response = await axios.get('https://travel-mate-backend-9h6l.onrender.com/user', {
           params: { userId: cookies.UserId }
         });
         setUser(response.data);
